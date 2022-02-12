@@ -1,0 +1,197 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  font-family: 'poppins';
+  overflow: hidden;
+}
+main{
+  width: 100%;
+  min-height: 100vh;
+}
+#section1{
+    height:450px;
+    width: 450px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: -40%;
+    left: -22%;
+}
+#bgimg{
+    height:450px;
+    width: 650px;
+}
+#overlay{
+  position: absolute;
+    height:450px;
+    width: 650px;
+    background: linear-gradient(to left bottom,#FF0000,#FC9696);
+    opacity: .8;
+}
+#flatimore{
+  position: absolute;
+  left: 55%;
+  top: 65%;
+  transform: translate(-50%,0);
+  /* background-color: red; */
+  color: black;
+  height: 50px;
+  z-index: 9999;
+}
+#section2{
+  left: 15%;
+  top: 18%;
+  height: 424px;
+  width: 250px;
+  background-color: white;
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: -1px 2px 8px 0px rgba(168, 168, 168, 0.75);
+  -webkit-box-shadow: -1px 2px 8px 0px rgba(168, 168, 168, 0.75);
+  -moz-box-shadow: -1px 2px 8px 0px rgba(168, 168, 168, 0.75);
+}
+#titlebox{
+  height: 5vmax;
+  width: 30vmax;
+  position: absolute;
+  left: 5vmax;
+  top: 3vmax;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgb(189, 189, 189);
+  /* background-color: red; */
+  border-radius: 50px;
+  overflow: hidden;
+  font: 500 2vmax 'poppins';
+}
+#logintitle{
+  display: grid;
+  place-items: center;
+  height: 5vmax;
+  width: 60%;
+  background-color: #FF0000;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: white;
+}
+#signuptitle{
+  display: grid;
+  place-items: center;
+  height: 100%;
+  width: 40%;
+  /* background-color: red; */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: white;
+}
+#tomato{
+  height: 100px;
+  position: absolute;
+  bottom: -4vmax;
+  right: -3vmax;
+}
+form{
+  position: absolute;
+  top: 23%;
+  height: 200px;
+  padding: 0 20px;
+  /* background-color: red; */
+}
+.inputs{
+  display: flex;
+}
+#name{
+  width: 200px;
+  position: relative;
+  padding-right: 20px;
+}
+#password{
+  /* background-color: red; */
+  width: 200px;
+  position: relative;
+  margin-top: 10px;
+}
+.inputs input{
+  border: none;
+  border-bottom: 2px solid silver;
+  font-size: 17px;
+  outline: none;
+}
+#passwrd{
+  margin-top: 30px;
+}
+.inputs label{
+  position: absolute;
+  bottom: 10px;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+#eye{
+  position: absolute;
+  height: 10px;
+  right: -10px;
+  opacity: .6;
+  margin-top: 28px;
+  cursor: pointer;
+  /* background-color: #FC9696; */
+}
+#nme:focus~#namelbl,
+#nme:valid~#namelbl{
+  transform: translateY(-20px);
+}
+#passwrd:focus~#passlbl,
+#passwrd:valid~#passlbl{
+  transform: translateY(-20px);
+}
+#frgtpass{
+  position: absolute;
+  /* background-color: red; */
+  right: 2%;
+  bottom: 43%;
+  font-weight: 500;
+  color: silver;
+  font-size: 12px;
+  cursor: pointer;
+}
+#btnlogin{
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%,0);
+  width: 200px;
+  height: 25px;
+  border-radius: 25px;
+  background-color: #FF0000;
+  outline: none;
+  border: none;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+#authentications{
+  width: 200px;
+  position: absolute;
+  bottom: 12%;
+  left: 25%;
+  /* transform: translate(-50%,0); */
+}
+#authentications > img{
+  height: 25px;
+  margin-left: 2%;
+  cursor: pointer;
+}
+label{
+  color: rgb(182, 182, 182);
+}
+/* #login{
+  left: 50px;
+} */
+#signup{
+  left: 450px;
+}
