@@ -10,8 +10,9 @@ html,body{
 }
 main{
   min-height: 100vh;
-  width: 100px;
+  width: 100%;
   overflow: hidden;
+  position: relative;
 }
 #section1{
   width: 30vmax;
@@ -51,13 +52,8 @@ main{
 #signup{
   display: none;
 }
-@media screen and (max-width:500px) {
-  main{
-    overflow: hidden;
-  }
-  
-}
-/* #section2{
+
+#section2{
   left: 15%;
   top: 18%;
   height: 424px;
@@ -71,15 +67,14 @@ main{
 }
 #titlebox{
   height: 5vmax;
-  width: 30vmax;
+  width: 32vmax;
   position: absolute;
-  left: 5vmax;
+  left: 4.5vmax;
   top: 3vmax;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid rgb(189, 189, 189); */
-  /* background-color: red; 
+  border: 1px solid rgb(189, 189, 189);
   border-radius: 50px;
   overflow: hidden;
   font: 500 2vmax 'poppins';
@@ -99,34 +94,23 @@ main{
   place-items: center;
   height: 100%;
   width: 40%;
-  /* background-color: red; 
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  background-color: white;
-}
-#tomato{
-  height: 100px;
-  position: absolute;
-  bottom: -4vmax;
-  right: -3vmax;
+
 }
 form{
   position: absolute;
-  top: 23%;
-  height: 200px;
-  padding: 0 20px;
-  /* background-color: red; 
-}
-.inputs{
-  display: flex;
+  top: 13vmax;
+  margin-left: -5.8vmax;
+  height: 35vmax;
+  width: 35vmax;
+  padding:0 2vmax;
 }
 #name{
   width: 200px;
   position: relative;
-  padding-right: 20px;
 }
 #password{
-  /* background-color: red; 
   width: 200px;
   position: relative;
   margin-top: 10px;
@@ -136,6 +120,11 @@ form{
   border-bottom: 2px solid silver;
   font-size: 17px;
   outline: none;
+  width: 31vmax;
+  margin-left: 1vmax;
+}
+.inputs>label{
+  margin-left: 1vmax;
 }
 #passwrd{
   margin-top: 30px;
@@ -149,23 +138,21 @@ form{
 #eye{
   position: absolute;
   height: 10px;
-  right: -10px;
+  right: 0.58vmax;
   opacity: .6;
-  margin-top: 28px;
+  top: 4vmax;
   cursor: pointer;
-  /* background-color: #FC9696; 
 }
 #nme:focus~#namelbl,
 #nme:valid~#namelbl{
-  transform: translateY(-20px);
+  transform: translateY(-15px);
 }
 #passwrd:focus~#passlbl,
 #passwrd:valid~#passlbl{
-  transform: translateY(-20px);
+  transform: translateY(-15px);
 }
 #frgtpass{
   position: absolute;
-  /* background-color: red; 
   right: 2%;
   bottom: 43%;
   font-weight: 500;
@@ -175,9 +162,8 @@ form{
 }
 #btnlogin{
   position: absolute;
-  left: 50%;
+  left: 4.8%;
   bottom: 5%;
-  transform: translate(-50%,0);
   width: 200px;
   height: 25px;
   border-radius: 25px;
@@ -192,8 +178,8 @@ form{
   width: 200px;
   position: absolute;
   bottom: 12%;
-  left: 25%;
-  /* transform: translate(-50%,0); 
+  left: 65%;
+  transform: translate(-50%,0); 
 }
 #authentications > img{
   height: 25px;
@@ -203,9 +189,6 @@ form{
 label{
   color: rgb(182, 182, 182);
 }
-/* #login{
+#login{
   left: 50px;
-} 
-#signup{
-  left: 450px;
-} */
+}
