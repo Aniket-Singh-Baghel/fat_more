@@ -8,187 +8,191 @@ html,body{
   width: 100%;
   font-family: 'poppins';
 }
-main{
-  min-height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-#section1{
-  width: 30vmax;
-  height: 30vmax;
-  border-radius: 50%;
-  position: absolute;
-  overflow: hidden;
-  left: -6vmax;
-  top: -7vmax;
-  background-color: red;
-}
-#overlay{
-  position: absolute;
-  height:30vmax;
-  width: 30vmax;
-  background: linear-gradient(to left bottom,#FF0000,#FC9696);
-  opacity: .8;
-}
-#fatmore{
-  position: absolute;
-  left: 12vmax;
-  top: 13vmax;
-  color: black;
-  height: 4vmax;
-  z-index: 9999;
-}
-#bgimg{
-  height: 30vmax;
-  width: 30vmax;
-}
-#tomato{
-  height: 15vmax;
-  position: absolute;
-  bottom: -3vmax;
-  right: -3.5vmax;
-}
-#signup{
-  display: none;
-}
+@media screen and (max-width:600px) {
+  
 
-#section2{
-  left: 15%;
-  top: 18%;
-  height: 424px;
-  width: 250px;
-  background-color: white;
-  position: absolute;
-  border-radius: 20px;
-  box-shadow: -1px 2px 8px 0px rgba(168, 168, 168, 0.75);
-  -webkit-box-shadow: -1px 2px 8px 0px rgba(168, 168, 168, 0.75);
-  -moz-box-shadow: -1px 2px 8px 0px rgba(168, 168, 168, 0.75);
-}
-#titlebox{
-  height: 5vmax;
-  width: 32vmax;
-  position: absolute;
-  left: 4.5vmax;
-  top: 3vmax;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid rgb(189, 189, 189);
-  border-radius: 50px;
-  overflow: hidden;
-  font: 500 2vmax 'poppins';
-}
-#logintitle{
-  display: grid;
-  place-items: center;
-  height: 5vmax;
-  width: 60%;
-  background-color: #FF0000;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  color: white;
-}
-#signuptitle{
-  display: grid;
-  place-items: center;
-  height: 100%;
-  width: 40%;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  main{
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  #section1{
+    width: 30vmax;
+    height: 30vmax;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    left: -6vmax;
+    top: -7vmax;
+    background-color: red;
+  }
+  #overlay{
+    position: absolute;
+    height:30vmax;
+    width: 30vmax;
+    background: linear-gradient(to left bottom,#FF0000,#FC9696);
+    opacity: .8;
+  }
+  #fatmore{
+    position: absolute;
+    left: 12vmax;
+    top: 13vmax;
+    color: black;
+    height: 4vmax;
+    z-index: 9999;
+  }
+  #bgimg{
+    height: 30vmax;
+    width: 30vmax;
+  }
+  #tomato{
+    height: 15vmax;
+    position: absolute;
+    bottom: -3vmax;
+    right: -3.5vmax;
+  }
+  #signup{
+    display: none;
+  }
 
-}
-form{
-  position: absolute;
-  top: 13vmax;
-  margin-left: -5.8vmax;
-  height: 35vmax;
-  width: 35vmax;
-  padding:0 2vmax;
-}
-#name{
-  width: 200px;
-  position: relative;
-}
-#password{
-  width: 200px;
-  position: relative;
-  margin-top: 10px;
-}
-.inputs input{
-  border: none;
-  border-bottom: 2px solid silver;
-  font-size: 17px;
-  outline: none;
-  width: 31vmax;
-  margin-left: 1vmax;
-}
-.inputs>label{
-  margin-left: 1vmax;
-}
-#passwrd{
-  margin-top: 30px;
-}
-.inputs label{
-  position: absolute;
-  bottom: 10px;
-  pointer-events: none;
-  transition: all 0.5s ease;
-}
-#eye{
-  position: absolute;
-  height: 10px;
-  right: 0.58vmax;
-  opacity: .6;
-  top: 4vmax;
-  cursor: pointer;
-}
-#nme:focus~#namelbl,
-#nme:valid~#namelbl{
-  transform: translateY(-15px);
-}
-#passwrd:focus~#passlbl,
-#passwrd:valid~#passlbl{
-  transform: translateY(-15px);
-}
-#frgtpass{
-  position: absolute;
-  right: 2%;
-  bottom: 43%;
-  font-weight: 500;
-  color: silver;
-  font-size: 12px;
-  cursor: pointer;
-}
-#btnlogin{
-  position: absolute;
-  left: 4.8%;
-  bottom: 5%;
-  width: 200px;
-  height: 25px;
-  border-radius: 25px;
-  background-color: #FF0000;
-  outline: none;
-  border: none;
-  color: white;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-#authentications{
-  width: 200px;
-  position: absolute;
-  bottom: 12%;
-  left: 65%;
-  transform: translate(-50%,0); 
-}
-#authentications > img{
-  height: 25px;
-  margin-left: 2%;
-  cursor: pointer;
-}
-label{
-  color: rgb(182, 182, 182);
-}
-#login{
-  left: 50px;
+  #section2{
+    left: 15%;
+    top: 18%;
+    height: 424px;
+    width: 250px;
+    background-color: white;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: -1px 2px 8px 0px rgba(168, 168, 168, 0.75);
+    -webkit-box-shadow: -1px 2px 8px 0px rgba(168, 168, 168, 0.75);
+    -moz-box-shadow: -1px 2px 8px 0px rgba(168, 168, 168, 0.75);
+  }
+  #titlebox{
+    height: 5vmax;
+    width: 32vmax;
+    position: absolute;
+    left: 4.5vmax;
+    top: 3vmax;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 50px;
+    overflow: hidden;
+    font: 500 2vmax 'poppins';
+  }
+  #logintitle{
+    display: grid;
+    place-items: center;
+    height: 5vmax;
+    width: 60%;
+    background-color: #FF0000;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: white;
+  }
+  #signuptitle{
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 40%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+  }
+  form{
+    position: absolute;
+    top: 13vmax;
+    margin-left: -5.8vmax;
+    height: 35vmax;
+    width: 35vmax;
+    padding:0 2vmax;
+  }
+  #name{
+    width: 200px;
+    position: relative;
+  }
+  #password{
+    width: 200px;
+    position: relative;
+    margin-top: 10px;
+  }
+  .inputs input{
+    border: none;
+    border-bottom: 2px solid silver;
+    font-size: 17px;
+    outline: none;
+    width: 31vmax;
+    margin-left: 1vmax;
+  }
+  .inputs>label{
+    margin-left: 1vmax;
+  }
+  #passwrd{
+    margin-top: 30px;
+  }
+  .inputs label{
+    position: absolute;
+    bottom: 10px;
+    pointer-events: none;
+    transition: all 0.5s ease;
+  }
+  #eye{
+    position: absolute;
+    height: 10px;
+    right: 0.58vmax;
+    opacity: .6;
+    top: 4vmax;
+    cursor: pointer;
+  }
+  #nme:focus~#namelbl,
+  #nme:valid~#namelbl{
+    transform: translateY(-15px);
+  }
+  #passwrd:focus~#passlbl,
+  #passwrd:valid~#passlbl{
+    transform: translateY(-15px);
+  }
+  #frgtpass{
+    position: absolute;
+    right: 2%;
+    bottom: 43%;
+    font-weight: 500;
+    color: silver;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  #btnlogin{
+    position: absolute;
+    left: 4.8%;
+    bottom: 5%;
+    width: 200px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: #FF0000;
+    outline: none;
+    border: none;
+    color: white;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  #authentications{
+    width: 200px;
+    position: absolute;
+    bottom: 12%;
+    left: 65%;
+    transform: translate(-50%,0); 
+  }
+  #authentications > img{
+    height: 25px;
+    margin-left: 2%;
+    cursor: pointer;
+  }
+  label{
+    color: rgb(182, 182, 182);
+  }
+  #login{
+    left: 50px;
+  }
 }
