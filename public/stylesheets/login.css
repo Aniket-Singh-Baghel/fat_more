@@ -9,10 +9,8 @@ html,body{
   font-family: 'poppins';
 }
 @media screen and (max-width:600px) {
-  
-
   main{
-    min-height: 100vh;
+    min-height: 95vh;
     width: 100%;
     overflow: hidden;
     position: relative;
