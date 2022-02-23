@@ -9,53 +9,12 @@
 </head>
 <body>
     <main>
-        <section id="section1">
-            <img src="../images/flatimore.svg" id='fatmore' alt="hello">
-            <div id="overlay"></div>
-            <!-- <img id='bgimg' src="../images/bgimg.jpg" alt=""> -->
-        </section>
-        <section id="section2">
-            <div id="titlebox">
-                <div id="logintitle">Login</div>
-                <div id="signuptitle">Signup</div>
+        <div class="outer">
+            <div id="overlay">
             </div>
-            <form action="" id="login">
-                <div id="name" class="inputs">
-                    <input type="email" required id="nme" autocomplete="off">
-                    <label for="" id="namelbl">Email</label>
-                </div>
-                <div id="password" class="inputs">
-                    <input type="password" required id="passwrd">
-                    <label for="" id="passlbl">Password</label>
-                    <img src="../images/eye.png" alt="" id='eye' onclick="toggle()">
-                </div>
-                <h5 id="frgtpass">Forgot Password</h5>
-                <button id="btnlogin">Login</button>
-            </form>
-           <form action="" id="signup">
-                <div id="name" class="inputs">
-                    <input type="text" required id="nme">
-                    <label for="" id="namelbl">Name</label>
-                </div>
-                <div id="email" class="inputs">
-                    <input type="email" required id="eml">
-                    <label for="" id="namelbl">Email</label>
-                </div>
-                <div id="password" class="inputs">
-                    <input type="password" required id="passwrd">
-                    <label for="" id="passlbl">Password</label>
-                    <img src="../images/eye.png" alt="" id='eye' onclick="toggle()">
-                </div>
-                <h5 id="frgtpass">Forgot Password</h5>
-                <button id="btnlogin">Sign Up</button>
-            </form>
-            <div id="authentications">
-                <img src="../images/google.png" alt="">
-                <img src="../images/fb.png" alt="">
-                <img src="../images/twitter.png" alt="">
-            </div>
-        </section>
-        <img src="../images/tomato.png" id='tomato' alt="">
+            <img src="../images/bgimg.jpg" alt="" class="bgimg">
+        </div>
+        <img src="../images/tomato.png" alt="" class="tomato">
     </main>
     <script src="../javascripts/login.js"></script>
 </body>
